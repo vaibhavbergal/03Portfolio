@@ -427,12 +427,11 @@ header nav ul li a:hover::after {
 footer {
   margin-top: 20px;
   text-align: center;
-  padding: 20px 0 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.164);
   font-family: "Roboto Mono", monospace;
 }
 footer .footer-icons {
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 footer .footer-icons a {
   margin: 0 10px;
@@ -592,6 +591,9 @@ footer p {
   }
   .contact .contact-container .contact-info .contact-card h3 span {
     font-size: 12px;
+  }
+  footer .footer-icons {
+    padding: 10px 0;
   }
   footer .footer-icons a {
     font-size: 20px;

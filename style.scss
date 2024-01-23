@@ -445,12 +445,11 @@ header {
 footer {
   margin-top: 20px;
   text-align: center;
-  padding: 20px 0 10px;
   border-top: $border;
   font-family: $secondary-font;
 
   .footer-icons {
-    padding-bottom: 15px;
+    padding: 15px 0;
     a {
       margin: 0 10px;
       font-size: 30px;
@@ -637,6 +636,7 @@ footer {
 
   footer {
     .footer-icons {
+      padding: 10px 0;
       a {
         font-size: 20px;
       }
