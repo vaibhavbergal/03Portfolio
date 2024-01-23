@@ -496,6 +496,10 @@ footer p {
   .navbar .menu {
     display: none;
   }
+  .hero {
+    padding: 15px 20px;
+    margin: 15px 10px;
+  }
   .hero .hero-left h1 {
     font-size: 25px;
     line-height: 35px;
@@ -517,33 +521,74 @@ footer p {
     font-size: 18px;
     padding: 5px 8px;
   }
+  .about {
+    padding: 15px 20px;
+    margin: 15px 10px;
+  }
   .about .column-right h1 {
-    font-size: 30px;
+    font-size: 20px;
+    padding-bottom: 8px;
   }
   .about .column-right p {
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 1px;
     line-height: 19px;
   }
+  .skill {
+    padding: 15px 20px;
+    margin: 15px 10px;
+  }
   .skill h1 {
-    font-size: 30px;
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .skill .skill-container {
+    gap: 14px;
+    margin-top: 0;
   }
   .skill .skill-container .skill-list {
     font-size: 14px;
+    padding: 7px 10px;
+    border-width: 1px;
   }
   .skill .skill-container .skill-list img {
     width: 30px;
     height: 30px;
+  }
+  .project {
+    padding: 15px 20px;
+    margin: 15px 10px;
+  }
+  .project h1 {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .project .project-container {
+    margin-top: 0;
   }
   .contact {
     padding: 15px 20px;
     margin: 15px 10px;
   }
   .contact h1 {
-    font-size: 30px;
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .contact .contact-container {
+    margin-top: 0;
   }
   .contact .contact-container .contact-info .contact-card {
     gap: 20px;
+  }
+  .contact .contact-container .contact-info .contact-card a {
+    font-size: 20px;
+    padding: 5px 8px;
+  }
+  .contact .contact-container .contact-info .contact-card h3 {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 1px;
   }
   .contact .contact-container .contact-info .contact-card h3 span {
     font-size: 12px;

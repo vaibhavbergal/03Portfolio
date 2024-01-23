@@ -525,6 +525,8 @@ footer {
     }
   }
   .hero {
+    padding: 15px 20px;
+    margin: 15px 10px;
     .hero-left {
       h1 {
         font-size: 25px;
@@ -554,12 +556,15 @@ footer {
   }
 
   .about {
+    padding: 15px 20px;
+    margin: 15px 10px;
     .column-right {
       h1 {
-        font-size: 30px;
+        font-size: 20px;
+        padding-bottom: 8px;
       }
       p {
-        font-size: 16px;
+        font-size: 13px;
         letter-spacing: 1px;
         line-height: 19px;
       }
@@ -567,12 +572,19 @@ footer {
   }
 
   .skill {
+    padding: 15px 20px;
+    margin: 15px 10px;
     h1 {
-      font-size: 30px;
+      font-size: 20px;
+      padding-bottom: 8px;
     }
     .skill-container {
+      gap: 14px;
+      margin-top: 0;
       .skill-list {
         font-size: 14px;
+        padding: 7px 10px;
+        border-width: 1px;
         img {
           width: 30px;
           height: 30px;
@@ -581,17 +593,39 @@ footer {
     }
   }
 
+  .project {
+    padding: 15px 20px;
+    margin: 15px 10px;
+    h1 {
+      font-size: 20px;
+      padding-bottom: 8px;
+    }
+    .project-container {
+      margin-top: 0;
+    }
+  }
+
   .contact {
     padding: 15px 20px;
     margin: 15px 10px;
     h1 {
-      font-size: 30px;
+      font-size: 20px;
+      padding-bottom: 8px;
     }
     .contact-container {
+      margin-top: 0;
       .contact-info {
         .contact-card {
           gap: 20px;
+          a {
+            font-size: 20px;
+            padding: 5px 8px;
+          }
           h3 {
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 20px;
+            letter-spacing: 1px;
             span {
               font-size: 12px;
             }
