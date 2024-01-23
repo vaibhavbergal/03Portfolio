@@ -173,7 +173,6 @@ header nav ul li a:hover::after {
   border: 1px solid rgba(255, 255, 255, 0.164);
   padding: 25px 30px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-  padding: 10px;
   background-color: black;
   height: 35vh;
   margin-top: 12px;
@@ -494,6 +493,9 @@ footer p {
   }
 }
 @media screen and (max-width: 583px) {
+  .navbar .menu {
+    display: none;
+  }
   .hero .hero-left h1 {
     font-size: 25px;
     line-height: 35px;
@@ -519,7 +521,7 @@ footer p {
     font-size: 30px;
   }
   .about .column-right p {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 1px;
     line-height: 19px;
   }
@@ -532,6 +534,19 @@ footer p {
   .skill .skill-container .skill-list img {
     width: 30px;
     height: 30px;
+  }
+  .contact {
+    padding: 15px 20px;
+    margin: 15px 10px;
+  }
+  .contact h1 {
+    font-size: 30px;
+  }
+  .contact .contact-container .contact-info .contact-card {
+    gap: 20px;
+  }
+  .contact .contact-container .contact-info .contact-card h3 span {
+    font-size: 12px;
   }
 }
 
