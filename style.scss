@@ -525,7 +525,7 @@ footer {
     }
   }
   .hero {
-    padding: 15px 20px;
+    padding: 15px 0;
     margin: 15px 10px;
     .hero-left {
       h1 {
@@ -632,6 +632,18 @@ footer {
           }
         }
       }
+    }
+  }
+
+  footer {
+    .footer-icons {
+      a {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 10px;
+      font-weight: 0;
     }
   }
 }
