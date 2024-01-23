@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;900&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #020817;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+header nav {
+  padding: 0 25px;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav h1 span {
+  color: rgb(255, 0, 0);
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav ul li {
+  margin-left: 30px;
+}
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  margin-top: 5px;
+  transition: all ease 0.5s;
+  background-color: red;
+}
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  justify-content: space-between;
+  display: flex;
+  padding: 25px;
+  margin-top: 25px;
+  gap: 10px;
+}
+.hero .hero-left {
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 25px 30px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+.hero .hero-left h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+.hero .hero-left h1 span {
+  color: #dc2626;
+}
+.hero .hero-left h3 {
+  margin: 50px 0 30px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #eab308;
+}
+.hero .hero-left .btn {
+  padding: 5px 12px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #eab308;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all ease;
+}
+.hero .hero-left .btn:hover {
+  transform: scale(1.05);
+}
+.hero .hero-left .btn i {
+  margin-left: 5px;
+}
+.hero img {
+  width: 360px;
+  background: rgb(120, 120, 255);
+  border-radius: 25px;
+}
+.hero .hero-right {
+  display: flex;
+  gap: 25px;
+}
+.hero .hero-right .hero-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hero .hero-right .hero-icons a {
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  padding: 10px 12px;
+  font-size: 25px;
+  border-radius: 100%;
+  transition: all ease;
+}
+.hero .hero-right .hero-icons a:hover {
+  transform: scale(1.05);
+}
+
+.about {
+  display: flex;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 25px 30px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  margin: 0 25px;
+  gap: 25px;
+}
+.about img {
+  border-radius: 25px;
+  width: 80%;
+}
+.about .column-right h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #9ca3af;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  margin-bottom: 20px;
+}
+.about .column-right p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+}
+.about .column-right .about-card {
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 25px 30px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: black;
+  height: 35vh;
+  margin-top: 12px;
+  padding: 12px 20px;
+}
+.about .column-right .about-card .about-menu {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 12px;
+  color: #eab308;
+  gap: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  padding-bottom: 10px;
+}
+.about .column-right .about-card .about-menu li {
+  cursor: pointer;
+  transition: all ease;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.about .column-right .about-card .about-menu li:hover {
+  transform: scale(1.05);
+}
+.about .column-right .about-card .dropdown {
+  list-style-type: none;
+}
+.about .column-right .about-card .dropdown li p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #dc2626;
+  margin-bottom: 5px;
+}
+.about .column-right .about-card .dropdown li h5 {
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.skill {
+  margin: 0 25px;
+  display: flex;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 25px 30px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+.skill h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #9ca3af;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  margin-bottom: 20px;
+}
+.skill .skill-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.skill .skill-container .skill-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  border: 2px solid red;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: black;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 1px;
+}
+.skill .skill-container .skill-list img {
+  width: 35px;
+  height: 35px;
+}
+.skill .skill-container .skill-list:nth-child(odd) {
+  border-color: blue;
+}
+.skill .skill-container .skill-list:nth-child(3n) {
+  border-color: rgb(255, 0, 98);
+}
+.skill .skill-container .skill-list i {
+  color: rgb(0, 119, 255);
+  font-size: 30px;
+}
+
+.project {
+  margin: 0 25px;
+  display: flex;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 25px 30px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+.project h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #9ca3af;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  margin-bottom: 20px;
+}
+.project .project-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.project .project-container .project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  width: 320px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+}
+.project .project-container .project-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.project .project-container .project-card .project-info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+.project .project-container .project-card .project-info h4 {
+  font-size: 16px;
+  line-height: 20px;
+  backdrop-filter: blur(10px);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: black;
+  font-weight: 300;
+}
+.project .project-container .project-card .project-info h4 i {
+  margin-right: 5px;
+  color: rgb(95, 95, 255);
+  font-size: 20px;
+}
+.project .project-container .project-card .project-info .project-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  border-radius: 20px;
+}
+.project .project-container .project-card .project-info .project-btn .btn {
+  padding: 5px 12px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #eab308;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all ease;
+}
+.project .project-container .project-card .project-info .project-btn .btn:hover {
+  transform: scale(1.05);
+}
+.project .project-container .project-card .project-info .project-btn .btn i {
+  margin-right: 5px;
+  font-weight: 900;
+  color: black;
+}
+
+.contact {
+  margin: 0 25px;
+  display: flex;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  padding: 25px 30px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+.contact h1 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #9ca3af;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+  margin-bottom: 20px;
+}
+.contact .contact-container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.contact .contact-container img {
+  width: 400px;
+  border-radius: 25px;
+}
+.contact .contact-container .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact .contact-container .contact-info .contact-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact .contact-container .contact-info .contact-card a {
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  padding: 10px 12px;
+  font-size: 25px;
+  border-radius: 100%;
+  background-color: blue;
+  transition: all ease;
+}
+.contact .contact-container .contact-info .contact-card a:hover {
+  transform: scale(1.05);
+}
+.contact .contact-container .contact-info .contact-card h3 {
+  line-height: 30px;
+  letter-spacing: 3px;
+  font-family: "Roboto Mono", monospace;
+}
+.contact .contact-container .contact-info .contact-card h3 span {
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.431372549);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px 0 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.164);
+  font-family: "Roboto Mono", monospace;
+}
+footer .footer-icons {
+  padding-bottom: 15px;
+}
+footer .footer-icons a {
+  margin: 0 10px;
+  font-size: 30px;
+  transition: all ease;
+  color: rgba(255, 255, 255, 0.3960784314);
+}
+footer .footer-icons a:hover {
+  color: white;
+}
+footer p {
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 842px) {
+  .hero {
+    margin: 25px;
+    flex-direction: column-reverse;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    padding: 25px 30px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+  .hero .hero-left {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    text-align: center;
+  }
+  .hero .hero-left h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .hero .hero-left h3 {
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  img {
+    width: 300px;
+    height: 430px;
+  }
+  .about img {
+    display: none;
+  }
+  .contact .contact-container img {
+    display: none;
+  }
+  .contact .contact-container .contact-info {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 583px) {
+  .hero .hero-left h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .hero .hero-left h3 {
+    font-size: 20px;
+  }
+  .hero .hero-left .btn {
+    font-size: 16px;
+  }
+  .hero .hero-right {
+    gap: 15px;
+  }
+  .hero .hero-right img {
+    width: 250px;
+    height: 300px;
+  }
+  .hero .hero-right .hero-icons a {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+  .about .column-right h1 {
+    font-size: 30px;
+  }
+  .about .column-right p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  .skill h1 {
+    font-size: 30px;
+  }
+  .skill .skill-container .skill-list {
+    font-size: 14px;
+  }
+  .skill .skill-container .skill-list img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

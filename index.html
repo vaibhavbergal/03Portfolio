@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  </head>
+  <body  id="home">
+    <header>
+      <nav class="navbar">
+        <h1><a href="index.html"><span>< </span> Vaibhav <span>/></span></a></h1>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Hello, I'm
+          <span>Vaibhav</span><br>
+        Bergal</h1>
+          <h3>Frontend Developer</h3>
+          <button  class="btn">
+          <a href="img/vaibhav_resume.pdf" download>Resume <i class="ri-download-line"></i></a></button>
+        </div>
+        <div class="hero-right">
+        <img src="./img/person.png" alt="vaibhav" />
+        <div class="hero-icons">          
+          <a href=""><i class="ri-github-fill"></i></a>
+          <a href=""><i class="ri-linkedin-fill"></i></a>
+          <a href=""><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+      </section>
+ 
+      <section class="about" id="about">
+          <img src="img/about.jpg" alt="vaibhav" />
+        <div class="column-right">
+        <h1>About Me</h1>
+            <p>
+              Passionate FrontEnd developer with knowledge of building user-friendly and performant web applications. Skilled in developing responsive and intuitive interfaces using JavaScript, ReactJS, HTML, and CSS/Scss, Bootstrap, Tailwind CSS.
+            </p>
+            <div class="about-card">
+              <ul class="about-menu">
+                <li onclick="edu()">Education</li>
+                <li onclick="exp()">Experience</li>
+              </ul>
+              <ul class="dropdown">
+                <li id="education">
+                  <p>2020-2023</p>
+                  <h5>BCA</h5>
+                  <h5>Shivaji University, Kolhapur</h5>
+                </li>
+                <li id="experience" hidden>
+                  <p>Sep 2023 - Oct 2023</p>
+                  <h5>Web Development</h5>
+                  <h5>TopperWorld</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+     <section class="skill" id="skill">
+        <h1>Tech Stack</h1>
+        <div class="skill-container">
+          <div class="skill-list">
+            <img
+              width="35"
+              height="35"
+              src="https://img.icons8.com/color/48/html-5--v1.png"
+              alt="html-5--v1"
+            />HTML
+          </div>
+          <div class="skill-list">
+            <img
+              width="35"
+              height="35"
+              src="https://img.icons8.com/color/48/css3.png"
+              alt="css3"
+            />CSS
+          </div>
+          <div class="skill-list">
+            <img
+              width="35"
+              height="35"
+              src="https://img.icons8.com/color/48/bootstrap--v2.png"
+              alt="bootstrap--v2"
+            />BootStrap
+          </div>
+          <div class="skill-list">
+            <img
+              width="35"
+              height="35"
+              src="img/sass.svg"
+              alt="javascript--v1"
+            />
+            SCSS
+          </div>
+          <div class="skill-list">
+            <img
+              width="35"
+              height="35"
+              src="https://img.icons8.com/color/48/tailwind_css.png"
+              alt="tailwind_css"
+            />
+            Tailwind CSS
+          </div>
+          <div class="skill-list">
+            <img
+              width="35"
+              height="35"
+              src="img/javascript.svg"
+              alt="javascript--v1"
+            />
+            JavaScript
+          </div>
+          <div class="skill-list">
+            <img src="img/React-icon.svg" alt="React-icon"
+            width="35"
+            height="35">
+            ReactJS
+          </div>
+          <div class="skill-list">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/mysql-logo.png"
+              alt="mysql-logo"
+            />
+            MySQL
+          </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="project" id="project">
+        <h1>My Projects</h1>
+        <div class="project-container">
+          <div class="project-card">
+            <img src="img/about.jpg" alt="project1" /> 
+            <div class="project-info">
+              <h4><i class="ri-folder-zip-fill"></i>Lorem</h4>
+              <div class="project-btn">
+                <button class="btn"><a href=""><i class="ri-live-line"></i>Live</a></button>
+                <button class="btn"><a href=""><i class="ri-code-s-slash-fill"></i>Code</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-card">
+              <a href="mailto:bergalvaibhav33@gmail.com"><i class="ri-mail-fill"></i></a>
+              <h3>Mail<br>
+              <span>bergalvaibhav33@gmail.com</span></h3>
+            </div>
+            <div class="contact-card">
+              <a><i class="ri-map-pin-2-fill"></i></a>
+              <h3>Location<br>
+              <span>Pune, Maharastra, India</span></h3>
+            </div>
+            <div class="contact-card">
+              <a href="./img/vaibhav_resume.pdf" download><i class="ri-user-fill"></i></a>
+              <h3>Resume<br>
+              <span>Download my resume</span></h3>
+            </div>
+          </div>
+          <img src="img/about.jpg" alt="about">
+        </div>
+      </section>
+    </main> 
+
+      <footer>
+        <div class="footer-icons">          
+          <a href=""><i class="ri-github-fill"></i></a>
+          <a href=""><i class="ri-linkedin-fill"></i></a>
+          <a href=""><i class="ri-twitter-x-line"></i></a>
+        </div>
+      <p> Copyright &copy; Vaibhav 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
