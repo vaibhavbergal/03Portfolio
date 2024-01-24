@@ -53,7 +53,7 @@ a {
 
 header {
   position: sticky;
-  z-index: 50;
+  z-index: 20;
   top: 0;
   backdrop-filter: blur(10px);
   border-bottom: $border;
@@ -67,6 +67,11 @@ header {
     h1 span {
       color: rgb(255, 0, 0);
     }
+
+    i {
+      display: none;
+      cursor: pointer;
+    }
     ul {
       display: flex;
       list-style-type: none;
@@ -79,19 +84,6 @@ header {
 
           &:hover {
             color: white;
-          }
-
-          &::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 3px;
-            margin-top: 5px;
-            transition: all ease 0.5s;
-            background-color: red;
-          }
-          &:hover::after {
-            width: 100%;
           }
         }
       }
@@ -519,8 +511,42 @@ footer {
 
 @media screen and (max-width: 583px) {
   .navbar {
+    position: relative;
+    h1 {
+      font-size: 22px;
+    }
+
+    label {
+      i {
+        &:nth-child(1) {
+          display: block;
+          font-size: 27px;
+        }
+        &:nth-child(2) {
+          font-size: 30px;
+        }
+      }
+    }
     .menu {
-      display: none;
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+      top: -220px;
+      display: flex;
+      border-bottom: $border;
+      box-shadow: $shadow;
+      color: white;
+      background-color: black;
+      width: 100%;
+      flex-direction: column;
+      left: 0;
+      gap: 30px;
+      padding: 20px 0;
+      transition: all ease 0.5s;
+
+      li {
+        margin: 0;
+      }
     }
   }
   .hero {
@@ -635,6 +661,7 @@ footer {
   }
 
   footer {
+    margin-bottom: 5px;
     .footer-icons {
       padding: 10px 0;
       a {

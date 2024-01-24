@@ -22,7 +22,7 @@ a {
 
 header {
   position: sticky;
-  z-index: 50;
+  z-index: 20;
   top: 0;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.164);
@@ -38,6 +38,10 @@ header nav {
 header nav h1 span {
   color: rgb(255, 0, 0);
 }
+header nav i {
+  display: none;
+  cursor: pointer;
+}
 header nav ul {
   display: flex;
   list-style-type: none;
@@ -52,18 +56,6 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: white;
-}
-header nav ul li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  margin-top: 5px;
-  transition: all ease 0.5s;
-  background-color: red;
-}
-header nav ul li a:hover::after {
-  width: 100%;
 }
 
 .hero {
@@ -492,8 +484,38 @@ footer p {
   }
 }
 @media screen and (max-width: 583px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar h1 {
+    font-size: 22px;
+  }
+  .navbar label i:nth-child(1) {
+    display: block;
+    font-size: 27px;
+  }
+  .navbar label i:nth-child(2) {
+    font-size: 30px;
+  }
   .navbar .menu {
-    display: none;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    top: -220px;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.164);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    gap: 30px;
+    padding: 20px 0;
+    transition: all ease 0.5s;
+  }
+  .navbar .menu li {
+    margin: 0;
   }
   .hero {
     padding: 15px 0;
@@ -591,6 +613,9 @@ footer p {
   }
   .contact .contact-container .contact-info .contact-card h3 span {
     font-size: 12px;
+  }
+  footer {
+    margin-bottom: 5px;
   }
   footer .footer-icons {
     padding: 10px 0;
