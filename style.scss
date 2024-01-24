@@ -52,8 +52,8 @@ html[data-theme="light"] {
   --nav-heading: black;
   --bg-banner: linear-gradient(
     to top right,
-    rgb(187 247 208),
-    rgb(191 219 254)
+    rgb(95, 253, 151),
+    rgb(142, 190, 248)
   );
   --bg: #fcfcfc;
   --text: rgb(0, 0, 0);
@@ -229,11 +229,11 @@ header {
 .hero {
   justify-content: space-between;
   @include display();
-  background: var(--bg-banner);
   gap: 10px;
 
   .hero-left {
     @include card();
+    background: var(--bg-banner);
     width: 60%;
 
     h1 {
@@ -611,6 +611,7 @@ footer {
 
 @media screen and (max-width: 842px) {
   .hero {
+    background: var(--bg-banner);
     margin: 25px;
     flex-direction: column-reverse;
     align-items: center;

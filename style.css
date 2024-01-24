@@ -21,8 +21,8 @@ html[data-theme=light] {
   --nav-heading: black;
   --bg-banner: linear-gradient(
     to top right,
-    rgb(187 247 208),
-    rgb(191 219 254)
+    rgb(95, 253, 151),
+    rgb(142, 190, 248)
   );
   --bg: #fcfcfc;
   --text: rgb(0, 0, 0);
@@ -182,7 +182,6 @@ header nav ul li a:hover {
   display: flex;
   padding: 25px;
   margin-top: 25px;
-  background: var(--bg-banner);
   gap: 10px;
 }
 .hero .hero-left {
@@ -190,6 +189,7 @@ header nav ul li a:hover {
   border: var(--border);
   padding: 25px 30px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  background: var(--bg-banner);
   width: 60%;
 }
 .hero .hero-left h1 {
@@ -573,6 +573,7 @@ footer p {
 
 @media screen and (max-width: 842px) {
   .hero {
+    background: var(--bg-banner);
     margin: 25px;
     flex-direction: column-reverse;
     align-items: center;
