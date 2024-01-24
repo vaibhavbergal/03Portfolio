@@ -191,7 +191,7 @@ header {
     .about-card {
       @include card();
       background-color: black;
-      height: 25vh;
+      height: fit-content;
       margin-top: 12px;
       padding: 12px 20px;
 
