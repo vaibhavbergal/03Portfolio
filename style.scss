@@ -176,6 +176,7 @@ header {
   img {
     border-radius: $pad;
     width: 80%;
+    height: fit-content;
   }
   .column-right {
     h1 {
@@ -190,7 +191,7 @@ header {
     .about-card {
       @include card();
       background-color: black;
-      height: 30vh;
+      height: 25vh;
       margin-top: 12px;
       padding: 12px 20px;
 

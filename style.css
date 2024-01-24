@@ -145,6 +145,7 @@ header nav ul li a:hover {
 .about img {
   border-radius: 25px;
   width: 80%;
+  height: fit-content;
 }
 .about .column-right h1 {
   font-size: 40px;
@@ -166,7 +167,7 @@ header nav ul li a:hover {
   padding: 25px 30px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   background-color: black;
-  height: 30vh;
+  height: 25vh;
   margin-top: 12px;
   padding: 12px 20px;
 }
