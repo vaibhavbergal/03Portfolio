@@ -67,6 +67,113 @@ header {
     h1 span {
       color: rgb(255, 0, 0);
     }
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    .switch {
+      font-size: 17px;
+      position: relative;
+      display: inline-block;
+      width: 46px;
+      height: 24px;
+      margin-left: 20px;
+      cursor: pointer;
+
+      .sun img {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        animation: tilt 2s linear infinite;
+      }
+      .moon img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        animation: rotate 15s linear infinite;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes tilt {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        25% {
+          transform: rotate(-30deg);
+        }
+
+        75% {
+          transform: rotate(5deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      background-color: #183153;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: 0.4s;
+      border-radius: 30px;
+      border: $border;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      border-radius: 20px;
+      left: 4px;
+      bottom: 2px;
+      z-index: 2;
+      background-color: #ffde65;
+      transition: 0.4s;
+    }
+
+    .input:checked + .slider {
+      background-color: #4d95cc;
+      border-color: rgb(79, 20, 243);
+    }
+
+    .input:focus + .slider {
+      box-shadow: 0 0 1px #183153;
+    }
+
+    .input:checked + .slider:before {
+      transform: translateX(20px);
+      background-color: #e8e8e8;
+    }
 
     i {
       display: none;
@@ -519,6 +626,10 @@ footer {
     position: relative;
     h1 {
       font-size: 22px;
+    }
+    div {
+      flex-direction: row-reverse;
+      gap: 15px;
     }
 
     label {
