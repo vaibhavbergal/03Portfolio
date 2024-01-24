@@ -189,9 +189,8 @@ header {
     }
     .about-card {
       @include card();
-
       background-color: black;
-      height: 35vh;
+      height: 30vh;
       margin-top: 12px;
       padding: 12px 20px;
 
@@ -226,7 +225,12 @@ header {
           }
           h5 {
             margin-bottom: 5px;
-            font-weight: 300;
+            font-weight: 400;
+            letter-spacing: 1px;
+            &:nth-child(3) {
+              font-weight: 200;
+              font-size: 12px;
+            }
           }
         }
       }

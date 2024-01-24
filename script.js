@@ -1,8 +1,7 @@
 const menu = document.querySelector(".menu");
-const check = document.getElementById("ckeck");
+const check = document.getElementById("check");
 const openMenu = document.getElementById("open");
 const closeMenu = document.getElementById("close");
-const mediaQuerry = window.matchMedia("(min-width: 583px)");
 
 check.addEventListener("click", () => {
   if (!check.checked) {
@@ -16,9 +15,15 @@ check.addEventListener("click", () => {
   }
 });
 
-// mediaQuerry.addEventListener("change", function () {
-//   if (mediaQuerry.matches) {
-//     openMenu.style.display = "none";
-//     closeMenu.style.display = "none";
-//   }
-// });
+const education = document.getElementById("education");
+const experience = document.getElementById("experience");
+
+function edu() {
+  education.style.display = "block";
+  experience.style.display = "none";
+}
+
+function exp() {
+  education.style.display = "none";
+  experience.style.display = "block";
+}
