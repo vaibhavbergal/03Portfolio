@@ -71,11 +71,11 @@ header {
   z-index: 20;
   top: 0;
   backdrop-filter: blur(10px);
+  background-color: #020817;
   border-bottom: $border;
   box-shadow: $shadow;
   nav {
     padding: 0 $pad;
-    background-color: #020817;
     height: 3.5rem;
     display: flex;
     align-items: center;
