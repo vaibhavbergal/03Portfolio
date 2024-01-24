@@ -5,7 +5,7 @@ const closeMenu = document.getElementById("close");
 const mediaQuerry = window.matchMedia("(min-width: 583px)");
 
 check.addEventListener("click", () => {
-  if (!check.checked) {
+  if (check.checked) {
     menu.style.top = "3.6rem";
     openMenu.style.display = "none";
     closeMenu.style.display = "block";
@@ -34,4 +34,12 @@ function edu() {
 function exp() {
   education.style.display = "none";
   experience.style.display = "block";
+}
+
+function toggle() {
+  if (checkbox.checked == true) {
+    document.documentElement.setAttribute("data-theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
 }

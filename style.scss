@@ -3,8 +3,8 @@
 $base-font: "Montserrat", sans-serif;
 $primary-font: "Poppins", sans-serif;
 $secondary-font: "Roboto Mono", monospace;
-$primary-bg: #020817;
-$border: 1px solid rgba(255, 255, 255, 0.164);
+$primary-bg: var(--bg);
+$border: var(--border);
 $pad: 25px;
 $shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 
@@ -16,7 +16,7 @@ $shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 
 @mixin card {
   border-radius: 25px;
-  border: $border;
+  border: var(--border);
   padding: 25px 30px;
   box-shadow: $shadow;
 }
@@ -38,6 +38,21 @@ $shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 
 html {
   scroll-behavior: smooth;
+  --bg: #020817;
+  --nav-heading: #fcfcfc;
+  --text: rgba(255, 255, 255, 0.5);
+  --border: 1px solid rgba(255, 255, 255, 0.164);
+  --card-border: rgba(255, 255, 255, 0.164);
+  --bg-panel: navy;
+}
+
+html[data-theme="light"] {
+  --bg-panel: black;
+  --border: 1px solid rgba(0, 0, 0, 0.164);
+  --nav-heading: black;
+  --bg: #fcfcfc;
+  --text: rgb(0, 0, 0);
+  --card-border: rgba(255, 255, 255, 0.164);
 }
 
 body {
@@ -64,8 +79,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h1 span {
-      color: rgb(255, 0, 0);
+    h1 {
+      a {
+        color: var(--nav-heading);
+        span {
+          color: rgb(255, 0, 0);
+        }
+      }
     }
     div {
       display: flex;
@@ -80,7 +100,6 @@ header {
       height: 24px;
       margin-left: 20px;
       border-radius: 30px;
-
       cursor: pointer;
 
       .sun img {
@@ -180,6 +199,7 @@ header {
     i {
       display: none;
       cursor: pointer;
+      color: var(--nav-heading);
     }
     ul {
       display: flex;
@@ -214,6 +234,7 @@ header {
       letter-spacing: 3px;
       margin-top: 20px;
       font-family: $secondary-font;
+      color: var(--nav-heading);
 
       span {
         color: #dc2626;
@@ -267,6 +288,7 @@ header {
         font-size: 25px;
         border-radius: 100%;
         transition: all ease;
+        color: var(--nav-heading);
 
         &:hover {
           transform: scale(1.05);
@@ -292,13 +314,16 @@ header {
       @include title();
     }
     p {
-      color: rgba(255, 255, 255, 0.5);
+      color: var(--text);
       font-weight: 300;
       font-size: 14px;
       line-height: 25px;
     }
     .about-card {
-      @include card();
+      border-radius: 25px;
+      border: var(--border);
+      box-shadow: $shadow;
+      border-color: var(--card-border);
       background-color: black;
       height: max-content;
       margin-top: 12px;
@@ -311,6 +336,7 @@ header {
         color: #eab308;
         gap: 15px;
         border-bottom: $border;
+        border-color: var(--card-border);
         padding-bottom: 10px;
 
         li {
@@ -370,7 +396,7 @@ header {
       border: 2px solid red;
       font-size: 18px;
       border-radius: 10px;
-      background-color: black;
+      background-color: var(--bg-panel);
       font-family: $secondary-font;
       letter-spacing: 1px;
       img {
@@ -534,11 +560,12 @@ header {
           line-height: 30px;
           letter-spacing: 3px;
           font-family: $secondary-font;
+          color: var(--nav-heading);
 
           span {
             font-weight: 300;
             font-size: 14px;
-            color: #ffffff6e;
+            color: var(--text);
             font-family: $base-font;
             letter-spacing: 1px;
           }
@@ -560,10 +587,10 @@ footer {
       margin: 0 10px;
       font-size: 30px;
       transition: all ease;
-      color: #ffffff65;
+      color: var(--text);
 
       &:hover {
-        color: white;
+        color: var(--nav-heading);
       }
     }
   }
@@ -571,6 +598,7 @@ footer {
     font-weight: 200;
     letter-spacing: 2px;
     font-size: 14px;
+    color: var(--text);
   }
 }
 
