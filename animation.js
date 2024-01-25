@@ -1,33 +1,38 @@
-gsap.registerPlugin(ScrollTrigger);
+function init() {
+  gsap.registerPlugin(ScrollTrigger);
 
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
-});
-locoScroll.on("scroll", ScrollTrigger.update);
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+  });
+  locoScroll.on("scroll", ScrollTrigger.update);
 
-ScrollTrigger.scrollerProxy("[data-scroll-container]", {
-  scrollTop(value) {
-    return arguments.length
-      ? locoScroll.scrollTo(value, 0, 0)
-      : locoScroll.scroll.instance.scroll.y;
-  },
-  getBoundingClientRect() {
-    return {
-      top: 0,
-      left: 0,
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
-  },
-  pinType: document.querySelector("[data-scroll-container]").style.transform
-    ? "transform"
-    : "fixed",
-});
+  ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+    scrollTop(value) {
+      return arguments.length
+        ? locoScroll.scrollTo(value, 0, 0)
+        : locoScroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return {
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+    },
 
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+    pinType: document.querySelector("[data-scroll-container]").style.transform
+      ? "transform"
+      : "fixed",
+  });
 
-ScrollTrigger.refresh();
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+  ScrollTrigger.refresh();
+}
+
+init();
 
 var tl = gsap.timeline();
 
@@ -124,17 +129,6 @@ gsap.from(".contact img", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".contact img",
-    scroller: "[data-scroll-container]",
-  },
-});
-
-gsap.from(".footer-icons", {
-  x: -100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".footer-icons",
     scroller: "[data-scroll-container]",
   },
 });
