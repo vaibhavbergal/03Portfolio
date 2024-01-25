@@ -87,7 +87,9 @@ header {
     justify-content: space-between;
     h1 {
       a {
-        color: white;
+        background: linear-gradient(rgb(234, 0, 255), rgb(208, 255, 0));
+        background-clip: text;
+        color: transparent;
         span {
           color: rgb(255, 0, 0);
         }
@@ -621,6 +623,7 @@ footer {
     .hero-left {
       width: 100%;
       border: none;
+      background: none;
       box-shadow: none;
       padding: 0;
       text-align: center;
@@ -659,7 +662,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 583px) {
+@media screen and (max-width: 596px) {
   .navbar {
     position: relative;
     h1 {
