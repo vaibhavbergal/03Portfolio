@@ -96,7 +96,7 @@ gsap.from(".project h1", {
 });
 
 gsap.from(".project-card", {
-  scale: 0,
+  y: 100,
   opacity: 0,
   duration: 1,
   stagger: 0.1,
