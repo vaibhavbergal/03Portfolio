@@ -84,27 +84,27 @@ gsap.from(".skill h1, .skill-list", {
   },
 });
 
-gsap.from(".project h1", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".project h1",
-    scroller: "body",
-  },
-});
+// gsap.from(".project h1", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".project h1",
+//     scroller: "body",
+//   },
+// });
 
-gsap.from(".project-card", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".project-card",
-    scroller: "body",
-  },
-});
+// gsap.from(".project-card", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".project-card",
+//     scroller: "body",
+//   },
+// });
 
 // gsap.from(".contact h1, .contact-card", {
 //   y: 100,
