@@ -49,6 +49,7 @@ tl.from(".hero h1,.hero h3, .hero button", {
 tl.from(".hero-right img, .hero-right .hero-icons", {
   x: 100,
   opacity: 0,
+  delay: 0.5,
   stagger: 0.2,
 });
 
@@ -64,7 +65,7 @@ gsap.from(".about h1, .about .about-p,.about-card", {
 });
 
 gsap.from(".about img", {
-  scale: 0,
+  y: 100,
   opacity: 0,
   stagger: 0.1,
   scrollTrigger: {
