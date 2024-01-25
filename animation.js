@@ -106,24 +106,24 @@ gsap.from(".project-card", {
   },
 });
 
-gsap.from(".contact h1, .contact-card", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".contact h1, .contact-card",
-    scroller: "body",
-  },
-});
+// gsap.from(".contact h1, .contact-card", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".contact h1, .contact-card",
+//     scroller: "body",
+//   },
+// });
 
-gsap.from(".contact img", {
-  x: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".contact img",
-    scroller: "body",
-  },
-});
+// gsap.from(".contact img", {
+//   x: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".contact img",
+//     scroller: "body",
+//   },
+// });
