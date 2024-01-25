@@ -60,7 +60,7 @@ gsap.from(".about h1, .about .about-p,.about-card", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".about h1, .about .about-p, .about-card",
-    scroller: "body",
+    scroller: "[data-scroll-container]",
   },
 });
 
@@ -70,7 +70,7 @@ gsap.from(".about img", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".about img",
-    scroller: "body",
+    scroller: "[data-scroll-container]",
   },
 });
 
@@ -80,7 +80,7 @@ gsap.from(".skill h1, .skill-list", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".skill h1, .skill-list",
-    scroller: "body",
+    scroller: "[data-scroll-container]",
   },
 });
 
@@ -91,7 +91,7 @@ gsap.from(".project h1", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".project h1",
-    scroller: "body",
+    scroller: "[data-scroll-container]",
   },
 });
 
@@ -102,7 +102,7 @@ gsap.from(".project-card", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".project-card",
-    scroller: "body",
+    scroller: "[data-scroll-container]",
   },
 });
 
@@ -113,7 +113,7 @@ gsap.from(".contact h1, .contact-card", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".contact h1, .contact-card",
-    scroller: "body",
+    scroller: "[data-scroll-container]",
   },
 });
 
@@ -124,6 +124,17 @@ gsap.from(".contact img", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".contact img",
-    scroller: "body",
+    scroller: "[data-scroll-container]",
+  },
+});
+
+gsap.from(".footer-icons", {
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".footer-icons",
+    scroller: "[data-scroll-container]",
   },
 });
