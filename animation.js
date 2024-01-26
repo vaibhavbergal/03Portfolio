@@ -11,7 +11,7 @@ gsap.from(".navbar h1, .menu li, .navbar .switch,.navbar i", {
 tl.from(".hero h1,.hero h3, .hero button", {
   y: 100,
   opacity: 0,
-  duration: 0.5,
+  duration: 0.8,
   stagger: 0.2,
 });
 
@@ -39,7 +39,7 @@ gsap.from(".about img", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".about img",
-    scroller: "body",
+    // scroller: "body",
   },
 });
 
@@ -49,7 +49,7 @@ gsap.from(".skill h1, .skill-list", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".skill h1, .skill-list",
-    scroller: "body",
+    // scroller: "body",
   },
 });
 
@@ -60,7 +60,7 @@ gsap.from(".project h1", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".project h1",
-    scroller: "body",
+    // scroller: "body",
   },
 });
 
@@ -71,7 +71,7 @@ gsap.from(".project-card", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".project-card",
-    scroller: "body",
+    // scroller: "body",
   },
 });
 
@@ -82,7 +82,7 @@ gsap.from(".contact h1, .contact-card", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".contact h1, .contact-card",
-    scroller: "body",
+    // scroller: "body",
   },
 });
 
@@ -93,6 +93,6 @@ gsap.from(".contact img", {
   stagger: 0.1,
   scrollTrigger: {
     trigger: ".contact img",
-    scroller: "body",
+    // scroller: "body",
   },
 });

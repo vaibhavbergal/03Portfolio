@@ -36,10 +36,20 @@ function exp() {
   experience.style.display = "block";
 }
 
+var checkbox = document.getElementById("checkbox");
+
+var savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  document.documentElement.setAttribute("data-theme", savedTheme);
+  checkbox.checked = savedTheme === "light";
+}
+
 function toggle() {
   if (checkbox.checked) {
     document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
   } else {
     document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
   }
 }
