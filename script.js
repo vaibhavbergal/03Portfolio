@@ -36,9 +36,9 @@ function exp() {
   experience.style.display = "block";
 }
 
+var savedTheme = localStorage.getItem("theme");
 var checkbox = document.getElementById("checkbox");
 
-var savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
   document.documentElement.setAttribute("data-theme", savedTheme);
   checkbox.checked = savedTheme === "light";
