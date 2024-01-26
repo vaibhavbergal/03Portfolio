@@ -33,24 +33,6 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--bg);
   color: white;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #000000;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 a {
@@ -571,6 +553,7 @@ footer {
   text-align: center;
   border-top: var(--border);
   font-family: "Roboto Mono", monospace;
+  height: 400px;
 }
 footer .footer-icons {
   padding: 15px 0;
