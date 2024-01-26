@@ -64,25 +64,25 @@ body {
   font-family: $base-font;
   background-color: $primary-bg;
   color: white;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+// ::-webkit-scrollbar {
+//   width: 8px;
+// }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+// ::-webkit-scrollbar-track {
+//   background: transparent;
+// }
 
-::-webkit-scrollbar-thumb {
-  background: #000;
-}
+// ::-webkit-scrollbar-thumb {
+//   background: #000;
+// }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
 
 a {
   text-decoration: none;
@@ -607,6 +607,7 @@ footer {
   text-align: center;
   border-top: $border;
   font-family: $secondary-font;
+  height: 400px;
 
   .footer-icons {
     padding: 15px 0;
