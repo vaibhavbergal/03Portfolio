@@ -53,77 +53,77 @@ tl.from(".hero-right img, .hero-right .hero-icons", {
   stagger: 0.2,
 });
 
-gsap.from(".about h1, .about .about-p,.about-card", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".about h1, .about .about-p, .about-card",
-    scroller: "[data-scroll-container]",
-  },
-});
+// gsap.from(".about h1, .about .about-p,.about-card", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".about h1, .about .about-p, .about-card",
+//     scroller: "[data-scroll-container]",
+//   },
+// });
 
-gsap.from(".about img", {
-  y: 100,
-  opacity: 0,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".about img",
-    scroller: "[data-scroll-container]",
-  },
-});
+// gsap.from(".about img", {
+//   y: 100,
+//   opacity: 0,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".about img",
+//     scroller: "[data-scroll-container]",
+//   },
+// });
 
-gsap.from(".skill h1, .skill-list", {
-  y: 100,
-  opacity: 0,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".skill h1, .skill-list",
-    scroller: "[data-scroll-container]",
-  },
-});
+// gsap.from(".skill h1, .skill-list", {
+//   y: 100,
+//   opacity: 0,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".skill h1, .skill-list",
+//     scroller: "[data-scroll-container]",
+//   },
+// });
 
-gsap.from(".project h1", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".project h1",
-    scroller: "[data-scroll-container]",
-  },
-});
+// gsap.from(".project h1", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".project h1",
+//     scroller: "[data-scroll-container]",
+//   },
+// });
 
-gsap.from(".project-card", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".project-card",
-    scroller: "[data-scroll-container]",
-  },
-});
+// gsap.from(".project-card", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".project-card",
+//     scroller: "[data-scroll-container]",
+//   },
+// });
 
-gsap.from(".contact h1, .contact-card", {
-  y: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".contact h1, .contact-card",
-    scroller: "[data-scroll-container]",
-  },
-});
+// gsap.from(".contact h1, .contact-card", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".contact h1, .contact-card",
+//     scroller: "[data-scroll-container]",
+//   },
+// });
 
-gsap.from(".contact img", {
-  x: 100,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-  scrollTrigger: {
-    trigger: ".contact img",
-    scroller: "[data-scroll-container]",
-  },
-});
+// gsap.from(".contact img", {
+//   x: 100,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+//   scrollTrigger: {
+//     trigger: ".contact img",
+//     scroller: "[data-scroll-container]",
+//   },
+// });
